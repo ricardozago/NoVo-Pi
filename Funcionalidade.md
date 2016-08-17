@@ -2,7 +2,7 @@
 
 ## Versão 1.0 :
 - [ ] Controle pelo smartphone usando Wi-Fi
-- [ ] Comando por voz 
+- [ ] Comando por voz (Alexa)
 - [ ] Multiusuarios 
 - [ ] Acesso a mídia local
 - [ ] Comunicação com caixa de som Bluetooth 
