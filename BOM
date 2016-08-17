@@ -1,0 +1,15 @@
+Versao Basica (v1):
+  - Raspberry Pi 3
+  - Smartphone Android (SW)
+  - Comando por voz (SW)
+  - Multiusuarios (SW)
+  - Servidor HTTP (Spotify e Acesso ao sistema) (SW)
+  - Caixa de som Bluetooth (SW)
+  - Caixa ligada a cabo (HW)(Opcional)
+  - Microfone RasPi (HW)
+  - LEDs tocando conforme a musica (HW/SW)
+
+********************************************************************************************
+Versao Avancada (v2):
+  - Placa de adaptação: caixa de som padrão para Bluetooth (HW)
+  - Hacker controle remoto caixa de som (HW)
