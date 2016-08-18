@@ -1,7 +1,11 @@
 # Stage of the project
 
+- Create formal proposal of the project
 - Calculate budget
-- Buy colored LEDS (at least 3)
-- Buy Bluetooth Stereo
+- Buy LED tape
+- Buy Bluetooth Stereo DONE
+- Buy Raspberry Pi DONE
 - Study Mopidy 
-- Study Alexa
+- Install Mopidy in Raspberry Pi
+- Make application using Mopidy 
+
