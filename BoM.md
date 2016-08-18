@@ -1,7 +1,7 @@
 # Lista de materiais
 
 ## Versao Basica 1.0:
-  - [x] Raspberry Pi 3
+  - [ ] Raspberry Pi 3
   - [ ] Micro USB power cable
   - [ ] SD card
   - [x] Smartphone Android (SW)
