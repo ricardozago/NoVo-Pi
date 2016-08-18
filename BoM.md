@@ -1,11 +1,11 @@
-# Lista de materiais
+# Bill of Materials
 
-## Versao Basica 1.0:
-  - [ ] Raspberry Pi 3 250 reais (http://produto.mercadolivre.com.br/MLB-769828778-novo-raspberry-pi-3-pi3-quadcore-12ghz-10xrapido-1gb-_JM)
-  - [ ] Micro USB power cable
-  - [ ] Fonte USB 5V ~ 2A
-  - [ ] SD card
+## Version 1.0:
+  - [x] Raspberry Pi 3
+  - [ ] USB Power Brick USB 5V ~ 2A + Micro USB Power Cable - R$ 38 - http://produto.mercadolivre.com.br/MLB-758535016-fonte-micro-usb-5v-3a-para-o-raspberry-pi-1-2-3--_JM
+  - [x] 16GB SD Card
   - [x] Smartphone Android (SW)
-  - [ ] Caixa de som Bluetooth (SW)
-  - [ ] LEDs coloridos tocando conforme a musica (HW/SW)
+  - [ ] Bluetooth Speaker (SW) - ~R$ 100,00 - We must choose which buy
+  - [ ] LED Strip Lights (HW/SW) - ~R$ 50,00 - Any sugestions?
 
+Total: ~R$ 188,00
