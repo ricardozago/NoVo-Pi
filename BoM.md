@@ -1,7 +1,7 @@
 # Lista de materiais
 
 ## Versao Basica 1.0:
-  - [ ] Raspberry Pi 3 250 reais (http://produto.mercadolivre.com.br/MLB-769828778-novo-raspberry-pi-3-pi3-quadcore-12ghz-10xrapido-1gb-_JM)
+  - [ ] Raspberry Pi 3 
   - [ ] Micro USB power cable
   - [ ] Fonte USB 5V ~ 2A
   - [ ] SD card
