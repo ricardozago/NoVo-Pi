@@ -1,15 +1,16 @@
-# Funcionalidades:
+# Features
 
-## Versão 1.0 :
-- [ ] Controle pelo smartphone (cliente HTTP ou MPD)
-- [ ] Multiusuarios 
-- [ ] Acesso a mídia local
-- [ ] Acesso a streams
-- [ ] Comunicação com caixa de som Bluetooth 
-- [ ] LEDs tocando conforme a musica 
+## Version 1.0 :
+- [ ] Smartphone's control (HTTP or MPD client)
+- [ ] Multiuser 
+- [ ] Access to local media
+- [ ] Capable of streamming
+- [ ] Communication with Bluetooth speakers
+- [ ] Communication over cable with speakers
+- [ ] LED tapes blinking according to the music
 
-## Versão 2.0 :
-- [ ] Placa de adaptação: caixa de som padrão para Bluetooth 
-- [ ] Hacker controle remoto caixa de som 
-- [ ] Caixa ligada a cabo 
-- [ ] Comando por voz (Alexa)
+## Version 2.0 :
+- [ ] Adaptation board for speakers
+- [ ] Hack: remote control of the speaker features 
+- [ ] Microphone input in the Raspberry
+- [ ] Voice command (Alexa)
