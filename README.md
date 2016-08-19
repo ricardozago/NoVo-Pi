@@ -1,17 +1,18 @@
 # Audio-on-demand
 
-## Projeto de Automação com Rasberry Pi ministrado pela FEEC sobre a sigla IA 351.
+## Automation project using Raspberry Pi for the discipline IA 351 of the School of Electrical Engineering and Computation.
 
-### Proposta: Fazer um Audio Center controlado por smartphones usando Raspberry Pi
+### Goal: Build an Audio Center controlled by smartdevices/computers with Raspberry Pi.
 
 
-### Integrantes:
+### Members:
 
 * Arthur Zanatta da Costa RA: 116194
 * Ricardo Zago RA: 118570
 * Mauricio Donatti RA: 092374
 
-### Professores:
+### Professors:
 
 * Lucas H. Gabrielli
 * Fabiano Fruett
+
