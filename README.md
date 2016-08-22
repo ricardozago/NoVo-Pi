@@ -9,11 +9,10 @@
 ### Members:
 
 * Arthur Zanatta da Costa RA: 116194
-* Ricardo Zago RA: 118570
 * Mauricio Donatti RA: 092374
+* Ricardo Zago RA: 118570
 
 ### Professors:
 
-* Lucas H. Gabrielli
 * Fabiano Fruett
-
+* Lucas H. Gabrielli
