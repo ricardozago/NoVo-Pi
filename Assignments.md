@@ -2,8 +2,7 @@
 
 ## Arthur
 
-* Study Mopidy
-* Implement Mopidy in Raspberry Pi
+*Report Mopidy basics to the group
 
 ## Mauricio
 
@@ -14,15 +13,13 @@
 
 ## Ricardo
 
-* Connection between Raspberry and LED tape
+* Connection between Raspberry and LED 
 * Application able to make the LED tape blink according to music
 * Suggestion: Start studying Alexa or get involved in one of the activities of your peers that fits you the most
 
 
 ## Group
 
-* Work on the pre - project file
-* Help Professor Fruett with the assignment of next class
 
 ## Extra
 
