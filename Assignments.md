@@ -2,7 +2,7 @@
 
 ## Arthur
 
-*Report Mopidy basics to the group
+* Report Mopidy basics to the group
 
 ## Mauricio
 
