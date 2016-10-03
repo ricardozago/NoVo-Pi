@@ -1,4 +1,5 @@
 #install jsonrpclib with pip install jsonrpclib
+#https://github.com/havardgulldahl/mopidycli/blob/master/mopidycli/cli.py
 
 import os
 import jsonrpclib
