@@ -17,84 +17,44 @@ def get_args():
     
 def main():
 
-    args = get_args()
-         
+    args = get_args()  
         if args.activate:
-
-
-          #Boot LED pattern
-	
-
-
+		
         active_flag = False
 
         #Check if module is already activated
-
         proc_1 = subprocess.Popen(['pgrep', '-f', 'mopidy'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-
         out, err = proc_1.communicate()
-
         proc_1.wait()
         
-
         if out != '':
 
             active_flag = True
-        
-
+	
         #Activate module
-
         if active_flag == False:
-
+		
             proc_2 = subprocess.call(['lxterminal', '-e','mopidy'])
-
-            
-
-    
-        
-        
-
+                                
     elif args.stop:
 
-
-        active_flag = False
+	active_flag = False
 
         #Check if module is already activated
-
         proc_1 = subprocess.Popen(['pgrep', '-f', 'mopidy'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-
         out, err = proc_1.communicate()
-
-        proc_1.wait()
-        
-
+        proc_1.wait()      
         if out != '':
 
             active_flag = True
         
         #Stop module
-
         if active_flag == True:
-
-
-            #proc_2 = subprocess.Popen(['lxterminal', '-e', 'pgrep', '-f', 'mopidy', 'awk', '\'{print \"kill -9 \" $1}\'', 'sh'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-
-            #proc_2 = subprocess.call('/home/pi/Desktop/mic/novo_pi/bash_script.sh', shell=True)
-
+		
             proc_2 = subprocess.call('./bash_script.sh', shell=True)
-                                             
-
-            
-            
-
-        
-
+                                                                            
     elif args.restart:
 
         _ = 1
-
-
-    #Check if mopidy is active. If it is, restart. Else, start.
-
-
+	
 main()
