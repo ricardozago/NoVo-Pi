@@ -1,0 +1,38 @@
+#include <wiringPi.h>
+#include <stdio.h>
+
+#define N 6
+
+int leds[6] = {0,2,3,21,22,23};
+
+void setup(void)
+{
+   int i;
+   wiringPiSetup();
+   for(i=0;i<N;i++)
+   	pinMode(0, OUTPUT);
+  	
+}
+
+void blink(int a)
+{
+   int i;
+   for(i=0;i<a;i++)
+	digitalWrite(leds[i], HIGH);
+   for(i=a;i<N;i++)
+	digitalWrite(leds[i], LOW); 	
+}
+
+int main (void)
+{
+  int counter=0;
+  setup();
+  for (;;)
+  {
+    printf("\nCounter = %d",counter);
+    blink(counter);
+    counter = (counter+1)%5;
+    delay (500) ;
+  }
+  return 0 ;
+}
