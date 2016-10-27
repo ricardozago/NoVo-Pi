@@ -28,9 +28,13 @@ def start():
         active_flag = True
     #Activate module
     if active_flag == False:
-        proc_2 = subprocess.call(['lxterminal', '-e','sudo', 'python', './led/patterns.py', '-a'])
-        proc_3 = subprocess.call(['lxterminal', '-e','mopidy'])
+        print '1'
+        #proc_2 = subprocess.call(['lxterminal', '-e','sudo', 'python', '/home/pi/Documents/NoVo-Pi/led/patterns.py', '-a'])
+        #proc_3 = subprocess.call(['lxterminal', '-e','/usr/bin/mopidy'])
         
+        proc_2 = subprocess.call(['sudo', 'python', '/home/pi/Documents/NoVo-Pi/led/patterns.py', '-a'])
+        proc_3 = subprocess.call(['/usr/bin/mopidy'])
+        print '2'
         
 def stop():
 
@@ -46,7 +50,8 @@ def stop():
 
     #Stop module
     if active_flag == True:
-        proc_2 = subprocess.call(['lxterminal', '-e','sudo', 'python', './led/patterns.py', '-s'])
+        #proc_2 = subprocess.call(['lxterminal', '-e','sudo', 'python', '/home/pi/Documents/NoVo-Pi/led/patterns.py', '-s'])
+        proc_2 = subprocess.call(['sudo', 'python', '/home/pi/Documents/NoVo-Pi/led/patterns.py', '-s'])
         proc_3 = subprocess.call('./bash_script.sh', shell=True)
         
     
