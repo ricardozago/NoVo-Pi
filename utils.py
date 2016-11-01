@@ -1,5 +1,6 @@
 import subprocess
 import argparse
+import threading
 
 
 def get_args():
@@ -28,13 +29,13 @@ def start():
         active_flag = True
     #Activate module
     if active_flag == False:
-        print '1'
-        #proc_2 = subprocess.call(['lxterminal', '-e','sudo', 'python', '/home/pi/Documents/NoVo-Pi/led/patterns.py', '-a'])
-        #proc_3 = subprocess.call(['lxterminal', '-e','/usr/bin/mopidy'])
-        
         proc_2 = subprocess.call(['sudo', 'python', '/home/pi/Documents/NoVo-Pi/led/patterns.py', '-a'])
-        proc_3 = subprocess.call(['/usr/bin/mopidy'])
-        print '2'
+
+        thread_1 = threading.Thread(target=start_mopidy, args=())
+        thread_1.start()
+        thread_2 = threading.Thread(target=start_led_mic, args=())
+        thread_2.start()
+        
         
 def stop():
 
@@ -50,10 +51,20 @@ def stop():
 
     #Stop module
     if active_flag == True:
-        #proc_2 = subprocess.call(['lxterminal', '-e','sudo', 'python', '/home/pi/Documents/NoVo-Pi/led/patterns.py', '-s'])
-        proc_2 = subprocess.call(['sudo', 'python', '/home/pi/Documents/NoVo-Pi/led/patterns.py', '-s'])
-        proc_3 = subprocess.call('./bash_script.sh', shell=True)
+    
+        proc_1 = subprocess.call(['sudo', 'python', '/home/pi/Documents/NoVo-Pi/led/patterns.py', '-s'])
+        proc_2 = subprocess.call('./stop_script.sh', shell=True)
+
         
+def start_mopidy():
+
+    proc_1 = subprocess.call(['/usr/bin/mopidy'])
+
+
+def start_led_mic():
+
+    proc_1 = subprocess.call(['sudo', 'python', '/home/pi/Documents/NoVo-Pi/led/led_by_mic/led_by_mic.py',])
+
     
 if __name__ == '__main__':
 
