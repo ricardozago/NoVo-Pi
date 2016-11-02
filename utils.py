@@ -51,9 +51,9 @@ def stop():
 
     #Stop module
     if active_flag == True:
-    
-        proc_1 = subprocess.call(['sudo', 'python', '/home/pi/Documents/NoVo-Pi/led/patterns.py', '-s'])
-        proc_2 = subprocess.call('./stop_script.sh', shell=True)
+
+        proc_1 = subprocess.call('./stop_script.sh', shell=True)
+        proc_2 = subprocess.call(['sudo', 'python', '/home/pi/Documents/NoVo-Pi/led/patterns.py', '-s'])
 
         
 def start_mopidy():
