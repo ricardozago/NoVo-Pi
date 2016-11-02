@@ -100,7 +100,7 @@ while 1:
 
         #threshold for silence during music playing
         
-        if mean_global > 0.1: 
+        if mean_global > 0.05: 
             set_led(offset)
             if std_local < std_global:
                 jiggle('small')
