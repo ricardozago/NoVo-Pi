@@ -65,8 +65,7 @@ while 1:
         mean_global = np.mean(sample_array)
         std_global = np.std(sample_array)
         list_global_samples = []
-    print mean_global
-
+	
     #local statistics
     bus.write_byte(0x48,0x40|Ain0)
     bus.read_byte(0x48)
