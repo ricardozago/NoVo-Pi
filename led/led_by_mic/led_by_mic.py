@@ -65,6 +65,7 @@ while 1:
         mean_global = np.mean(sample_array)
         std_global = np.std(sample_array)
         list_global_samples = []
+    print mean_global
 
     #local statistics
     bus.write_byte(0x48,0x40|Ain0)
@@ -95,22 +96,25 @@ while 1:
         offset = 7
 
     #Blink LEDs if music is playing
-
+        
     if server.core.playback.get_state() == 'playing':
-    
-        set_led(offset)
-        if std_local < std_global:
-            jiggle('small')
-            offset = randint(0, 7)
-            jiggle('small')
-        else:
-            jiggle('big')
-            offset = randint(0, 7)
-            jiggle('big')
-        sleep(uniform(0, 0.2))
 
-    else:
-        set_led(0)
+        #threshold for silence during music playing
+        
+        if mean_global > 0.1: 
+            set_led(offset)
+            if std_local < std_global:
+                jiggle('small')
+                offset = randint(0, 7)
+                jiggle('small')
+            else:
+                jiggle('big')
+                offset = randint(0, 7)
+                jiggle('big')
+            sleep(uniform(0, 0.2))
+        else: set_led(0)
+    else: set_led(0)
+        
         
 
 
