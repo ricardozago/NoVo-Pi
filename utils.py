@@ -1,6 +1,7 @@
 import subprocess
 import argparse
 import threading
+from time import sleep
 
 
 def get_args():
@@ -30,10 +31,11 @@ def start():
     #Activate module
     if active_flag == False:
         proc_2 = subprocess.call(['sudo', 'python', '/home/pi/Documents/NoVo-Pi/led/patterns.py', '-a'])
-
-        thread_1 = threading.Thread(target=start_mopidy, args=())
-        thread_1.start()
+        thread_1 = threading.Thread(target=start_mopidy, args=())        
         thread_2 = threading.Thread(target=start_led_mic, args=())
+        thread_1.start()
+        #Give some time to setup the Mopidy server, before starting the LEDs.
+        sleep(10) 
         thread_2.start()
         
         
@@ -63,7 +65,7 @@ def start_mopidy():
 
 def start_led_mic():
 
-    proc_1 = subprocess.call(['sudo', 'python', '/home/pi/Documents/NoVo-Pi/led/led_by_mic/led_by_mic.py',])
+    proc_1 = subprocess.call(['sudo', 'python', '/home/pi/Documents/NoVo-Pi/led/led_by_mic/led_by_mic.py'])
 
     
 if __name__ == '__main__':
